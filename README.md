@@ -16,9 +16,9 @@ Usaremos el protocolo de concenso **Proof-of-Authority (Clique)** en lugar de *P
 4. Archivo génesis
 5. Inicializar nodos
 6. Crear bootnode
-7. Iniciar el bootnode
-8. Iniciar los 2 sealer nodes
-9. Iniciar el localnode
+7. Iniciar bootnode
+8. Iniciar nodos selladores (sealer)
+9. Iniciar el nodo local
 10. Probar tu red local de ethereum
 
 ## 1. Requerimientos de software
