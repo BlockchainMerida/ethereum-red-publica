@@ -8,7 +8,7 @@ Esta es una guía para configurar una red local de ethereum con *2 nodos sellado
 
 Usaremos el protocolo de concenso **Proof-of-Authority (Clique)** en lugar de *Proof-of-Work (Ethash)* debido a que **PoA** requiere menos recursos computacionales y así tendremos mayor velocidad de aprobación de las transacciones.
 
-### Resumen:
+### Resumen:
 
 1. Requerimientos de software
 2. Estructura del proyecto
