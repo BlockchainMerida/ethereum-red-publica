@@ -100,7 +100,7 @@ mkdir localnode sealernode1 sealernode2
 
 Se crearán 3 cuentas, 2 para los nodos selladores (sealers) y 1 para el nodo local.
 
-### Cuenta para sealernode1
+### Cuenta para sealernode1
 
 #### Crear password para sealernode1
 
@@ -126,7 +126,7 @@ geth --datadir sealernode1/ account new --password sealernode1/password.txt
 # Address: {fed44...4e37e}
 ```
 
-### Cuenta para sealernode2
+### Cuenta para sealernode2
 
 #### Crear password para sealernode2
 
@@ -152,7 +152,7 @@ Copiar la llave pública y guardarla en en archivo `accounts.txt` de la siguient
 echo "sealernode2: 0xf3af8...a3d00" >> accounts.txt
 ```
 
-### Cuenta  para localnode
+### Cuenta  para localnode
 
 #### Crear password para localnode
 
@@ -418,7 +418,7 @@ Con esto aprendimos a grandes rasgos cómo funciona el protocolo de Ethereum al 
 
 Aquí tienes algunos retos a lograr si quieres poner en práctica lo aprendido en este tutorial e ir más allá para tener un mayor entendimiento de Ethereum y los smart contracts:
 
-### Reto 1:
+### Reto 1:
 Crear una red de Ethereum ya sea con PoW o PoA entre nodos configurados en distintas computadoras e interactuar entre ellos.
 
 ### Reto 2:
