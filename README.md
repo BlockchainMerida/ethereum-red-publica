@@ -370,7 +370,7 @@ cd devnet
 geth --datadir localnode --syncmode 'full' --port 30312 --networkid 12345 --gasprice '0' -unlock '0x183c2...def12' --password localnode/password.txt --bootnodes 'enode://977aa...c8419@127.0.0.1:30303' --rpc --rpcaddr '127.0.0.1' --rpcport 8545 --rpccorsdomain '*'
 ```
 
-Como se puede ver, en este caso configuramos el nodo local con acceso vía RPC para
+Como se puede ver, en este caso configuramos el nodo local con acceso vía RPC para acceder vía clientes como Web3.js, Metamask, Remix IDE, etc.
 
 **Nota: El servicio se quedará corriendo. Se requiere abrir otra ventana de terminal para seguir adelante.**
 
@@ -429,6 +429,16 @@ Crear un smart contract en la red (ej. un ERC20) e interactuar con él mediante 
 https://ethereum.org
 
 https://geth.ethereum.org/
+
+https://remix.ethereum.org
+
+https://web3js.readthedocs.io/en/1.0/
+
+https://metamask.io/
+
+https://github.com/grekinsky/my-first-dapp
+
+https://theethereum.wiki/w/index.php/ERC20_Token_Standard
 
 https://hackernoon.com/setup-your-own-private-proof-of-authority-ethereum-network-with-geth-9a0a3750cda8
 
