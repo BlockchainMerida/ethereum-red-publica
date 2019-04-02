@@ -113,17 +113,17 @@ nano sealernode1/password.txt
 chmod 700 sealernode1/password.txt
 ```
 
-Copiar la llave pública y guardarla en en archivo `accounts.txt` de la siguiente forma:
-
-```bash
-echo "sealernode1: 0xfed44...4e37e" >> accounts.txt
-```
-
 #### Crear cuenta para sealernode1
 
 ```bash
 geth --datadir sealernode1/ account new --password sealernode1/password.txt
 # Address: {fed44...4e37e}
+```
+
+Copiar la llave pública y guardarla en en archivo `accounts.txt` de la siguiente forma:
+
+```bash
+echo "sealernode1: 0xfed44...4e37e" >> accounts.txt
 ```
 
 ### Cuenta para sealernode2
