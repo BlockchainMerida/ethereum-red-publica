@@ -123,7 +123,7 @@ geth --datadir sealernode1/ account new --password sealernode1/password.txt
 Copiar la llave pública y guardarla en en archivo `accounts.txt` de la siguiente forma:
 
 ```bash
-echo "sealernode1: 0xfed44...4e37e" >> accounts.txt
+echo "sealernode1: fed44...4e37e" >> accounts.txt
 ```
 
 ### Cuenta para sealernode2
@@ -149,7 +149,7 @@ geth --datadir sealernode2/ account new --password sealernode2/password.txt
 Copiar la llave pública y guardarla en en archivo `accounts.txt` de la siguiente forma:
 
 ```bash
-echo "sealernode2: 0xf3af8...a3d00" >> accounts.txt
+echo "sealernode2: f3af8...a3d00" >> accounts.txt
 ```
 
 ### Cuenta  para localnode
@@ -175,16 +175,16 @@ geth --datadir localnode/ account new --password localnode/password.txt
 Copiar la llave pública y guardarla en en archivo `accounts.txt` de la siguiente forma:
 
 ```bash
-echo "localnode: 0x183c2...def12" >> accounts.txt
+echo "localnode: 183c2...def12" >> accounts.txt
 ```
 
 ### Verificar cuentas
 
 ```bash
 cat accounts.txt
-# sealernode1: 0xfed44...4e37e
-# sealernode2: 0xf3af8...a3d00
-# localnode: 0x183c2...def12
+# sealernode1: fed44...4e37e
+# sealernode2: f3af8...a3d00
+# localnode: 183c2...def12
 ```
 
 ## 4. Archivo Génesis
@@ -259,7 +259,7 @@ Which folder to save the genesis specs into? (default = current)
 >
 ```
 
-`ctrl+c`
+Al presionar `enter` mostrará un error debido a que no puede generar la configuración para algunas herramientas con el protocolo Proof-of-Authority, lo podemos ignorar y presionar `ctrl+c` para salir de puppeth.
 
 Eliminar archivo innecesario para los fines de este tutorial:
 
@@ -320,13 +320,19 @@ bootnode -nodekey boot.key -verbosity 9 -addr :30303
 
 **Nota: El servicio se quedará corriendo. Se requiere abrir otra ventana de terminal para seguir adelante.**
 
-En la nueva ventana, ir a la carpeta del proyecto:
+En la nueva ventana, **si no se encuentra en la carpeta del proyecto:**
 
 ```bash
 cd devnet
 ```
 
 ## 8. Iniciar nodos selladores (sealer)
+
+Para los siguientes pasos debemos tener a la mano las cuentas y la dirección del bootnode que creamos en los pasos anteriores, para eso podemos usar un editor como atom:
+
+```bash
+atom .
+```
 
 ### Iniciar sealernode1
 
@@ -338,7 +344,7 @@ geth --datadir sealernode1 --syncmode 'full' --port 30310 --networkid 12345 --ga
 
 **Nota: El servicio se quedará corriendo. Se requiere abrir otra ventana de terminal para seguir adelante.**
 
-En la nueva ventana, ir a la carpeta del proyecto:
+En la nueva ventana, **si no se encuentra en la carpeta del proyecto:**
 
 ```bash
 cd devnet
@@ -356,7 +362,7 @@ geth --datadir sealernode2 --syncmode 'full' --port 30311 --networkid 12345 --ga
 
 **Nota: El servicio se quedará corriendo. Se requiere abrir otra ventana de terminal para seguir adelante.**
 
-En la nueva ventana, ir a la carpeta del proyecto:
+En la nueva ventana, **si no se encuentra en la carpeta del proyecto:**
 
 ```bash
 cd devnet
@@ -374,7 +380,7 @@ Como se puede ver, en este caso configuramos el nodo local con acceso vía RPC p
 
 **Nota: El servicio se quedará corriendo. Se requiere abrir otra ventana de terminal para seguir adelante.**
 
-En la nueva ventana, ir a la carpeta del proyecto:
+En la nueva ventana, **si no se encuentra en la carpeta del proyecto:**
 
 ```bash
 cd devnet
